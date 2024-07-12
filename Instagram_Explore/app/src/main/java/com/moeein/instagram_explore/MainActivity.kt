@@ -41,6 +41,10 @@ class MainActivity : AppCompatActivity() {
             "https://dunijet.ir/YaghootAndroidFiles/ExplorePics/img18.png"
         )
 
+        run(url)
+    }
+
+    private fun run(url: List<String>) {
         if (NetworkChecker(this).isInternetConnected) {
 
             val glide = Glide.with(this)
@@ -62,11 +66,12 @@ class MainActivity : AppCompatActivity() {
                 }
 
             }
+            return
 
         } else {
             Toast.makeText(this, "No Internet!!!", Toast.LENGTH_SHORT).show()
+            run(url)
         }
-
 
     }
 }
