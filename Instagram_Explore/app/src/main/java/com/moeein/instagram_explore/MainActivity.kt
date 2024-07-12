@@ -35,6 +35,6 @@ class MainActivity : AppCompatActivity() {
             "https://dunijet.ir/YaghootAndroidFiles/ExplorePics/img18.png"
         )
 
-        
+
     }
 }

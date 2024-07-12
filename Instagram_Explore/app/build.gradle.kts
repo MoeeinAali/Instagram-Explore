@@ -7,8 +7,8 @@ android {
     namespace = "com.moeein.instagram_explore"
     compileSdk = 34
 
-    viewBinding {
-        enable = true
+    buildFeatures {
+        viewBinding = true
     }
 
     defaultConfig {
