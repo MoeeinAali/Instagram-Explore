@@ -7,6 +7,10 @@ android {
     namespace = "com.moeein.instagram_explore"
     compileSdk = 34
 
+    viewBinding {
+        enable = true
+    }
+
     defaultConfig {
         applicationId = "com.moeein.instagram_explore"
         minSdk = 31
