@@ -44,8 +44,6 @@ class MainActivity : AppCompatActivity() {
         if (NetworkChecker(this).isInternetConnected) {
 
             val glide = Glide.with(this)
-
-
             url.forEachIndexed { index, element ->
                 val imageName = "img${index + 1}"
                 val resId = binding.root.resources.getIdentifier(
@@ -64,7 +62,6 @@ class MainActivity : AppCompatActivity() {
                 }
 
             }
-
 
         } else {
             Toast.makeText(this, "No Internet!!!", Toast.LENGTH_SHORT).show()
